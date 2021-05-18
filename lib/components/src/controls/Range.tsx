@@ -7,7 +7,7 @@ import { parse } from './Number';
 
 type RangeProps = ControlProps<NumberValue | null> & RangeConfig;
 
-const RangeInput = styled.input(({ theme, hasValue }) => ({
+const RangeInput = styled.input<{ hasValue: boolean }>(({ theme, hasValue }) => ({
   // Resytled using http://danielstern.ca/range.css/#/
   '&': {
     width: '100%',
@@ -26,6 +26,13 @@ const RangeInput = styled.input(({ theme, hasValue }) => ({
     height: 6,
     cursor: 'pointer',
   },
+
+  // FIXME
+  ...(hasValue && {
+    '&::-moz-range-progress': { background: 'green' },
+    '&::-ms-fill-lower': { background: 'green' },
+    '&::-webkit-slider-runnable-track': { background: 'green' },
+  }),
 
   '&::-webkit-slider-thumb': {
     marginTop: '-6px',
@@ -169,6 +176,7 @@ export const RangeControl: FC<RangeProps> = ({
     <RangeWrapper>
       <RangeLabel>{min}</RangeLabel>
       <RangeInput
+        hasValue={hasValue}
         type="range"
         onChange={handleChange}
         {...{ name, value, min, max, step, onFocus, onBlur }}
