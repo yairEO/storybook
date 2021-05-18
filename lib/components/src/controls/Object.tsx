@@ -243,7 +243,7 @@ export const ObjectControl: React.FC<ObjectProps> = ({ name, value, onChange }) 
   const hasData = data !== null && data !== undefined;
 
   const [showRaw, setShowRaw] = useState(!hasData);
-  const [parseError, setParseError] = useState();
+  const [parseError, setParseError] = useState<Error>(null);
   const updateRaw = useCallback(
     (raw) => {
       try {
@@ -272,16 +272,19 @@ export const ObjectControl: React.FC<ObjectProps> = ({ name, value, onChange }) 
   }
 
   const rawJSONForm = (
-    <RawInput
-      ref={htmlElRef}
-      id={name}
-      name={name}
-      defaultValue={value === null ? '' : JSON.stringify(value, null, 2)}
-      onBlur={(event) => updateRaw(event.target.value)}
-      placeholder="Edit JSON string..."
-      autoFocus={forceVisible}
-      valid={parseError ? 'error' : null}
-    />
+    <>
+      <RawInput
+        ref={htmlElRef}
+        id={name}
+        name={name}
+        defaultValue={value === null ? '' : JSON.stringify(value, null, 2)}
+        onBlur={(event) => updateRaw(event.target.value)}
+        placeholder="Edit JSON string..."
+        autoFocus={forceVisible}
+        valid={parseError ? 'error' : null}
+      />
+      {parseError?.message}
+    </>
   );
 
   return (

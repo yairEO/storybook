@@ -29,7 +29,7 @@ export const NumberControl: FC<NumberProps> = ({
 }) => {
   const [inputValue, setInputValue] = useState(typeof value === 'number' ? value : '');
   const [forceVisible, setForceVisible] = useState(false);
-  const [parseError, setParseError] = useState(false);
+  const [parseError, setParseError] = useState<Error>(null);
 
   const handleChange = useCallback(
     (event: ChangeEvent<HTMLInputElement>) => {
@@ -37,10 +37,10 @@ export const NumberControl: FC<NumberProps> = ({
 
       const result = parseFloat(event.target.value);
       if (Number.isNaN(result)) {
-        setParseError(true);
+        setParseError(new Error(`'${event.target.value}' is not a number`));
       } else {
         onChange(result);
-        setParseError(false);
+        setParseError(null);
       }
     },
     [onChange, setParseError]
@@ -74,6 +74,7 @@ export const NumberControl: FC<NumberProps> = ({
         autoFocus={forceVisible}
         {...{ name, min, max, step, onFocus, onBlur }}
       />
+      {parseError?.message}
     </Wrapper>
   );
 };
