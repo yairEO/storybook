@@ -5976,6 +5976,7 @@ __metadata:
     "@storybook/react": "*"
     "@storybook/vue": "*"
     "@storybook/vue3": "*"
+    jest: "*"
     jest-preset-angular: "*"
     jest-vue-preprocessor: "*"
     preact: ^10.5.13
@@ -7686,8 +7687,6 @@ __metadata:
     regenerator-runtime: ^0.13.7
     ts-dedent: ^2.0.0
   peerDependencies:
-    "@babel/core": "*"
-    babel-loader: ^7.0.0 || ^8.0.0
     lit-html: ^1.4.1 || ^2.0.0-rc.3
   bin:
     build-storybook: ./bin/build.js
@@ -42988,34 +42987,6 @@ typescript@4.1.3:
   checksum: d76361f973a925e84b4aa9ddfe2ffa11d5e97b2afedd61dabef1070ca89c31259871043dc9cb356a101f7481b33752d5281afd18ca4cfd0fddb9e8cf2d072446
   languageName: node
   linkType: hard
-
-"web-components-kitchen-sink@workspace:examples/web-components-kitchen-sink":
-  version: 0.0.0-use.local
-  resolution: "web-components-kitchen-sink@workspace:examples/web-components-kitchen-sink"
-  dependencies:
-    "@storybook/addon-a11y": 6.3.0-alpha.45
-    "@storybook/addon-actions": 6.3.0-alpha.45
-    "@storybook/addon-backgrounds": 6.3.0-alpha.45
-    "@storybook/addon-controls": 6.3.0-alpha.45
-    "@storybook/addon-docs": 6.3.0-alpha.45
-    "@storybook/addon-jest": 6.3.0-alpha.45
-    "@storybook/addon-links": 6.3.0-alpha.45
-    "@storybook/addon-storyshots": 6.3.0-alpha.45
-    "@storybook/addon-storysource": 6.3.0-alpha.45
-    "@storybook/addon-viewport": 6.3.0-alpha.45
-    "@storybook/addons": 6.3.0-alpha.45
-    "@storybook/client-api": 6.3.0-alpha.45
-    "@storybook/core": 6.3.0-alpha.45
-    "@storybook/core-events": 6.3.0-alpha.45
-    "@storybook/source-loader": 6.3.0-alpha.45
-    "@storybook/web-components": 6.3.0-alpha.45
-    babel-loader: ^8.2.2
-    eventemitter3: ^4.0.7
-    format-json: ^1.0.3
-    global: ^4.4.0
-    lit-element: ^3.0.0-rc.2
-  languageName: unknown
-  linkType: soft
 
 "web-namespaces@npm:^1.0.0":
   version: 1.1.4
