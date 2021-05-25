@@ -47,15 +47,11 @@
     "prepare": "node ../../scripts/prepare.js"
   },
   "dependencies": {
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-syntax-import-meta": "^7.10.4",
-    "@babel/preset-env": "^7.12.11",
     "@storybook/addons": "6.3.0-alpha.45",
     "@storybook/client-api": "6.3.0-alpha.45",
     "@storybook/core": "6.3.0-alpha.45",
     "@storybook/core-common": "6.3.0-alpha.45",
     "@types/webpack-env": "^1.16.0",
-    "babel-plugin-bundled-import-meta": "^0.3.1",
     "core-js": "^3.8.2",
     "global": "^4.4.0",
     "react": "16.14.0",

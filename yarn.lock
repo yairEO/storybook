@@ -1333,7 +1333,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-import-meta@npm:^7.10.4, @babel/plugin-syntax-import-meta@npm:^7.2.0, @babel/plugin-syntax-import-meta@npm:^7.8.3":
+"@babel/plugin-syntax-import-meta@npm:^7.8.3":
   version: 7.10.4
   resolution: "@babel/plugin-syntax-import-meta@npm:7.10.4"
   dependencies:
@@ -2631,7 +2631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/template@npm:^7.0.0, @babel/template@npm:^7.10.4, @babel/template@npm:^7.12.13, @babel/template@npm:^7.12.7, @babel/template@npm:^7.3.3, @babel/template@npm:^7.4.0, @babel/template@npm:^7.4.4, @babel/template@npm:^7.7.0, @babel/template@npm:^7.8.6":
+"@babel/template@npm:^7.0.0, @babel/template@npm:^7.10.4, @babel/template@npm:^7.12.13, @babel/template@npm:^7.12.7, @babel/template@npm:^7.3.3, @babel/template@npm:^7.4.0, @babel/template@npm:^7.4.4, @babel/template@npm:^7.8.6":
   version: 7.12.13
   resolution: "@babel/template@npm:7.12.13"
   dependencies:
@@ -7672,15 +7672,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook/web-components@workspace:app/web-components"
   dependencies:
-    "@babel/plugin-syntax-dynamic-import": ^7.8.3
-    "@babel/plugin-syntax-import-meta": ^7.10.4
-    "@babel/preset-env": ^7.12.11
     "@storybook/addons": 6.3.0-alpha.45
     "@storybook/client-api": 6.3.0-alpha.45
     "@storybook/core": 6.3.0-alpha.45
     "@storybook/core-common": 6.3.0-alpha.45
     "@types/webpack-env": ^1.16.0
-    babel-plugin-bundled-import-meta: ^0.3.1
     core-js: ^3.8.2
     global: ^4.4.0
     lit-html: ^2.0.0-rc.3
@@ -12327,18 +12323,6 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.11.6
   checksum: d1fd88f2eee87f3d709373cfac5165f8407793b123e1c7061308311f7e6b0778e093a4a93e7130b47c5a742f2515d0c1d4f3da5097ff195ef91011688ec17ddc
-  languageName: node
-  linkType: hard
-
-"babel-plugin-bundled-import-meta@npm:^0.3.1":
-  version: 0.3.2
-  resolution: "babel-plugin-bundled-import-meta@npm:0.3.2"
-  dependencies:
-    "@babel/plugin-syntax-import-meta": ^7.2.0
-    "@babel/template": ^7.7.0
-  peerDependencies:
-    "@babel/core": ^7.7.0
-  checksum: 506faae34ff19b75d8bf5291b141af2e083932cdf2a8b4334582da9b26a2750a9d5c0656c1d6da15a4e51894abdbf407c18d10b9d1a596b688771d334105ac0c
   languageName: node
   linkType: hard
 
