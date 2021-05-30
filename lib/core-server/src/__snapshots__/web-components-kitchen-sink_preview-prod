@@ -98,7 +98,6 @@ Object {
                 Array [
                   "NODE_MODULES/@babel/preset-env/lib/index.js",
                   Object {
-                    "loose": true,
                     "shippedProposals": true,
                   },
                 ],
@@ -168,7 +167,6 @@ Object {
                 Array [
                   "NODE_MODULES/@babel/preset-env/lib/index.js",
                   Object {
-                    "loose": true,
                     "modules": false,
                     "shippedProposals": true,
                     "targets": "defaults",
@@ -188,42 +186,6 @@ Object {
             "loader": "NODE_MODULES/raw-loader/dist/cjs.js",
           },
         ],
-      },
-      Object {
-        "test": Array [
-          "/src(.*)\\\\.js$/",
-          "/packages(\\\\/|\\\\\\\\)*(\\\\/|\\\\\\\\)src(\\\\/|\\\\\\\\)(.*)\\\\.js$/",
-          "NODE_MODULES(\\\\/|\\\\\\\\)lit-html(.*)\\\\.js$/",
-          "NODE_MODULES(\\\\/|\\\\\\\\)lit-element(.*)\\\\.js$/",
-          "NODE_MODULES(\\\\/|\\\\\\\\)@open-wc(.*)\\\\.js$/",
-          "NODE_MODULES(\\\\/|\\\\\\\\)@polymer(.*)\\\\.js$/",
-          "NODE_MODULES(\\\\/|\\\\\\\\)@vaadin(.*)\\\\.js$/",
-        ],
-        "use": Object {
-          "loader": "NODE_MODULES/babel-loader/lib/index.js",
-          "options": Object {
-            "babelrc": false,
-            "plugins": Array [
-              "NODE_MODULES/@babel/plugin-syntax-dynamic-import/lib/index.js",
-              "NODE_MODULES/@babel/plugin-syntax-import-meta/lib/index.js",
-              Array [
-                "NODE_MODULES/babel-plugin-bundled-import-meta/index.js",
-                Object {
-                  "importStyle": "baseURI",
-                },
-              ],
-            ],
-            "presets": Array [
-              Array [
-                "NODE_MODULES/@babel/preset-env/lib/index.js",
-                Object {
-                  "corejs": 3,
-                  "useBuiltIns": "entry",
-                },
-              ],
-            ],
-          },
-        },
       },
       Object {
         "include": "NODE_MODULES\\\\/acorn-jsx/",
@@ -312,7 +274,6 @@ Object {
                 Array [
                   "NODE_MODULES/@babel/preset-env/lib/index.js",
                   Object {
-                    "loose": true,
                     "shippedProposals": true,
                   },
                 ],
@@ -404,7 +365,6 @@ Object {
                 Array [
                   "NODE_MODULES/@babel/preset-env/lib/index.js",
                   Object {
-                    "loose": true,
                     "shippedProposals": true,
                   },
                 ],
