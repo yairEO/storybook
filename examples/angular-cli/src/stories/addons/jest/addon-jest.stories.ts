@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions, import/no-unresolved */
 import { withTests } from '@storybook/addon-jest';
 
 import { AppComponent } from '../../../app/app.component';

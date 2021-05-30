@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   extends: ['@storybook/eslint-config-storybook'],
   rules: {
-    '@typescript-eslint/ban-ts-comment': 'warn',
+    '@typescript-eslint/ban-ts-comment': 'off',
   },
   overrides: [
     {
