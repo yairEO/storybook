@@ -27,11 +27,13 @@ export const Primary: Story<SbButton> = Template.bind({});
 Primary.args = {
   primary: true,
   label: 'Button',
+  size: 'medium',
 };
 
 export const Secondary: Story<SbButton> = Template.bind({});
 Secondary.args = {
   label: 'Button',
+  size: 'medium',
 };
 
 export const Large: Story<SbButton> = Template.bind({});
